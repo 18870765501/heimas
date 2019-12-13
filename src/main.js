@@ -4,6 +4,9 @@ import Vue from 'vue'
 import ElementUI from 'element-ui';
 // 导入 Element-ui的样式
 import 'element-ui/lib/theme-chalk/index.css';
+//导入初始化代码
+import './style/base.css';
+
 // 导入 根组件
 import App from '@/App.vue'
 // 导入 路由
