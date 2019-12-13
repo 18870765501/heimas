@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+    <el-input placeholder="请输入内容" prefix-icon="el-icon-search" v-model="input1">
+    </el-input>
+    <el-input placeholder="请输入内容" prefix-icon="el-icon-search" v-model="input2">
+    </el-input>
+    <el-input placeholder="请输入内容" prefix-icon="el-icon-key" v-model="input3">
+    </el-input>
+    <script>
+        export default {
+            data() {
+                return {
+                    input1: '',
+                    input2: '',
+                    input3: '',
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
