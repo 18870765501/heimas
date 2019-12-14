@@ -44,9 +44,7 @@
     </div>
     <img class="login-src" src="../../assets/login_banner_ele.png" alt />
   </div>
-  
 </template>
-
 <script>
 export default {
   name: "login",
