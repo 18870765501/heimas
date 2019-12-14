@@ -10,8 +10,12 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 //导入初始化代码
 import './style/base.css';
+
 //是否显示生产提示
 Vue.config.productionTip = false
+//测试环境变量
+window.console.log(process.env.VUE_APP_BASEURL);
+
 // 注册 Element-ui
 Vue.use(ElementUI);
 // 创建 Vue 示例
