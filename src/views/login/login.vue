@@ -41,7 +41,7 @@
         <!-- 按钮 -->
         <el-form-item>
           <el-button class="btn-txt" @click="submitForm" type="primary">登录</el-button>
-          <el-button type="primary">注册</el-button>
+          <el-button type="primary" @click="dialogFormVisible = true" class="register-button">注册</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -510,6 +510,51 @@ export default {
       margin-top: 28px;
       margin-bottom: 26px;
     }
+  }
+  // 对话框
+  .el-dialog {
+    width: 603px;
+    .el-dialog__header {
+      text-align: center;
+      background: linear-gradient(to right, #01c4fa, #1294fa);
+      padding-bottom: 20px;
+      .el-dialog__title {
+        color: white;
+      }
+    }
+  }
+  // 注册验证码
+  .register-captcha {
+    height: 40px;
+    width: 100%;
+  }
+  // 头像的样式
+  // 头像居中
+  .avatar-uploader {
+    text-align: center;
+  }
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409eff;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+  }
+  .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
   }
 }
 </style>
