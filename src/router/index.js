@@ -4,7 +4,8 @@ import Vue from 'vue';
 import VueRouter from "vue-router"
 //导入登录页面
 import login from "../views/login/login.vue"
-import register from "../views/login/register.vue"
+// import register from "../views/login/register.vue"
+import index from "../views/index/index.vue"
 //注册
 Vue.use(VueRouter)
 //规则
@@ -13,9 +14,10 @@ const routes = [
         path:"/login",
         component:login
     },
+    
     {
-        path:"/register",  //路径
-        component:register //文件名
+        path:"/index",  //路径
+        component:index //文件名
     }
 ]
 //创建路由对象
